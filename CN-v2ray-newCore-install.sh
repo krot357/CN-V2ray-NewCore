@@ -73,15 +73,15 @@ cd v2ray/
 scp root@$SourceSrv:/root/v2ray-linux-64.zip /root/v2ray/v2ray-linux-64.zip
 unzip v2ray-linux-64.zip
 mkdir -p '/etc/v2ray' '/var/log/v2ray'
-mkdir /usr/bin/v2ray
-cp v2ray /usr/bin/v2ray
-cp v2ctl /usr/bin/v2ray
-cp geoip.dat /usr/bin/v2ray
-cp geosite.dat /usr/bin/v2ray
-chmod +x '/usr/bin/v2ray/v2ray' '/usr/bin/v2ray/v2ctl'
-cp systemd/v2ray.service /etc/systemd/system/v2ray.service
+mkdir /usr/local/bin
+cp v2ray /usr/local/bin
+cp v2ctl /usr/local/bin
+cp geoip.dat /usr/local/bin
+cp geosite.dat /usr/local/bin
+chmod +x '/usr/local/bin/v2ray' '/usr/local/bin/v2ctl'
+cp systemd/system/v2ray.service /etc/systemd/system/v2ray.service
 
-cat << EOF > /etc/v2ray/config.json 
+cat << EOF > /usr/local/etc/v2ray/config.json 
 {
   "inbounds": [
     {
