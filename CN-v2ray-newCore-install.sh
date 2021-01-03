@@ -81,6 +81,7 @@ cp geosite.dat /usr/local/bin
 chmod +x '/usr/local/bin/v2ray' '/usr/local/bin/v2ctl'
 cp systemd/system/v2ray.service /etc/systemd/system/v2ray.service
 
+mkdir /usr/local/etc/v2ray
 cat << EOF > /usr/local/etc/v2ray/config.json 
 {
   "inbounds": [
@@ -119,7 +120,7 @@ systemctl enable v2ray.service
 systemctl start v2ray.service 
 cfgName=$(echo $PTH"_cfg.json")
 
-cat << EOF > $homeDir/$cfgName 
+cat << EOF > $homeDir"/"$cfgName 
 {
 
   "dns": {
