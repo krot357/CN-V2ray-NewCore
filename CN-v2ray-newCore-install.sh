@@ -2,7 +2,7 @@
 
 PTH=$1
 IP=$2
-SourceSrv=47.108.92.40
+SourceSrv=223.247.180.203
 
 
 sudo ssh-keygen -t rsa -b 2048 -N "" -f /root/.ssh/id_rsa
@@ -276,4 +276,5 @@ cat << EOF > $homeDir"/"$cfgName
 EOF
 
 ss -ntulp
+
 
