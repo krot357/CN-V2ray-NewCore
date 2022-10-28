@@ -12,7 +12,7 @@
 | <a name="input_registry_id"></a> [registry\_id](#input\_registry\_id) | Yandex container registry id. | `string` | n/a | yes |
 | <a name="input_registry_pass"></a> [registry\_pass](#input\_registry\_pass) | Password for login to Yandex container registry. | `string` | n/a | yes |
 | <a name="input_registry_user"></a> [registry\_user](#input\_registry\_user) | Username for login to Yandex container registry. | `string` | `"json_key"` | no |
-|
+| ###
 | <a name="input_set"></a> [set](#input\_set) | Additional values to set. | `map(any)` | `{}` | no |
 | <a name="input_set_sensitive"></a> [set\_sensitive](#input\_set\_sensitive) | Additional sensitive values to set. | `map(any)` | `{}` | no |
 | <a name="input_value"></a> [value](#input\_value) | Values for the jiralert chart. | `string` | `""` | no |
